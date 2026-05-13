@@ -21,8 +21,19 @@
             <li>Deutsch </li>
 </ol>
   <ul id="liste-hobbys"></ul>
-  
+  <script>
+  const hobbys = ["D&D", "Badminton", "Star Wars", "Maximilian"];  // deine eigenen Hobbys und Name eintragen
+  const liste = document.getElementById("liste-hobbys");
+  hobbys.forEach(h => {
+    let li = document.createElement("li");
+    li.textContent = h;
+    liste.appendChild(li);
+  });
+</script>
+
 <h2> Freies Bild</h2>
+
+
 
 </body>
 </html>
